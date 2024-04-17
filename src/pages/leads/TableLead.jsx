@@ -1,0 +1,202 @@
+import React, { useState } from "react";
+
+export const TableLead = () => {
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+
+  const toggleDeleteModal = () => {
+    setShowDeleteModal(!showDeleteModal);
+  };
+  return (
+    <>
+      <div className="overflow-x-auto p-3">
+        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-800 dark:text-gray-400">
+            <tr>
+              <th scope="col" className="px-2 py-3">
+                Lead Id
+              </th>
+              <th scope="col" className="px-2 py-3">
+                Full name
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Contact
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Email
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Description
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Company
+              </th>
+              <th scope="col" className="px-4 py-3">
+                dummy
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Sales
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Revenue
+              </th>
+              <th scope="col" className="px-4 py-3">
+                Action
+              </th>
+            </tr>
+          </thead>
+          <tbody className="">
+            <tr className="border-b dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700">
+              <td className="px-2 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                1.47
+              </td>
+              <th
+                scope="row"
+                className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                <img
+                  src="https://flowbite.s3.amazonaws.com/blocks/application-ui/products/imac-front-image.png"
+                  alt="iMac Front Image"
+                  className="w-auto h-8 mr-3"
+                />
+                Apple iMac 27"
+              </th>
+              <td className="px-2 py-2">
+                <span className="bg-primary-100 text-primary-800 text-xs font-medium px-2 py-0.5 rounded dark:bg-primary-900 dark:text-primary-300">
+                  123467890
+                </span>
+              </td>
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                1.47
+              </td>
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                1.47
+              </td>
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                0.47
+              </td>
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                0.47
+              </td>
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                0.47
+              </td>
+
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                Just now
+              </td>
+              <td className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <div className="w-full flex justify-center items-center gap-3">
+                  {/* View Button */}
+                  <button>
+                    <svg
+                      className="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.998 7.78C6.729 6.345 9.198 5 12 5c2.802 0 5.27 1.345 7.002 2.78a12.713 12.713 0 0 1 2.096 2.183c.253.344.465.682.618.997.14.286.284.658.284 1.04s-.145.754-.284 1.04a6.6 6.6 0 0 1-.618.997 12.712 12.712 0 0 1-2.096 2.183C17.271 17.655 14.802 19 12 19c-2.802 0-5.27-1.345-7.002-2.78a12.712 12.712 0 0 1-2.096-2.183 6.6 6.6 0 0 1-.618-.997C2.144 12.754 2 12.382 2 12s.145-.754.284-1.04c.153-.315.365-.653.618-.997A12.714 12.714 0 0 1 4.998 7.78ZM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  {/* Edit button  */}
+                  <button>
+                    <svg
+                      className="w-6 h-6 text-blue-500 hover:text-blue-700"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M11.32 6.176H5c-1.105 0-2 .949-2 2.118v10.588C3 20.052 3.895 21 5 21h11c1.105 0 2-.948 2-2.118v-7.75l-3.914 4.144A2.46 2.46 0 0 1 12.81 16l-2.681.568c-1.75.37-3.292-1.263-2.942-3.115l.536-2.839c.097-.512.335-.983.684-1.352l2.914-3.086Z"
+                        clipRule="evenodd"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        d="M19.846 4.318a2.148 2.148 0 0 0-.437-.692 2.014 2.014 0 0 0-.654-.463 1.92 1.92 0 0 0-1.544 0 2.014 2.014 0 0 0-.654.463l-.546.578 2.852 3.02.546-.579a2.14 2.14 0 0 0 .437-.692 2.244 2.244 0 0 0 0-1.635ZM17.45 8.721 14.597 5.7 9.82 10.76a.54.54 0 0 0-.137.27l-.536 2.84c-.07.37.239.696.588.622l2.682-.567a.492.492 0 0 0 .255-.145l4.778-5.06Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  {/* Delete button  */}
+                  <button onClick={toggleDeleteModal}>
+                    <svg
+                      className="w-6 h-6 text-red-600 hover:text-red-800"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm-2 9a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1Zm13-6a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {/* Delete Modal */}
+      {showDeleteModal && (
+        <div
+          id="deleteModal"
+          className="fixed inset-0 z-50 overflow-y-auto flex items-center justify-center"
+        >
+          <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+          <div className=" bg-white dark:bg-slate-800 rounded-lg p-8 relative">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-xl dark:text-slate-200 font-semibold ">
+                Confirm Deletion
+              </h2>
+              <button onClick={toggleDeleteModal} className="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 dark:text-gray-300 dark:hover:text-gray-200 text-slate-800 hover:text-slate-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p className="dark:text-gray-300 my-6">
+              Are you sure you want to delete this customer?
+            </p>
+            <div className="mt-6 flex justify-around w-full items-center">
+              <button
+                className="px-4 py-2 bg-slate-300 hover:bg-slate-500 text-gray-800 hover:text-white rounded mr-2"
+                onClick={toggleDeleteModal}
+              >
+                Cancel
+              </button>
+              <button className="px-4 py-2 bg-red-600 hover:bg-red-700 hover:text-white rounded">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
